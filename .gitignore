@@ -1,0 +1,18 @@
+_notes/
+/bower_components/
+/node_modules/
+/cgi-bin/
+# Numerous always-ignore extensions
+*.diff
+*.err
+*.log
+*.orig
+*.rej
+*.swo
+*.swp
+*.vi
+*.zip
+*~
+*.css.map
+dwsync.xml
+*.json
