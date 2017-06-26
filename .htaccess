@@ -1,0 +1,22 @@
+
+# Added by the pair Networks Software Installation Manager
+#AddType application/x-httpd-php .php
+#Enabled suExec per ticket F6Z2P2Y to run PHP 5.6 for this site, enabled 06/08/2017
+Action application/x-pair-sphp /cgi-bin/php56.cgi
+AddType application/x-pair-sphp .php
+
+
+
+# BEGIN WPSuperCache
+# END WPSuperCache
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
