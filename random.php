@@ -24,8 +24,8 @@
             $location = $row[ "location" ];
             $phone = $row[ "phone" ];
             $url = $row[ "internal_url" ];
-            if(!$logo){
-                $logo=$banner;
+            if ( !$logo ) {
+                $logo = $banner;
             }
         }
     } else {
@@ -42,16 +42,19 @@
                 <?=$tag?>
             </h3>
             <div class="serving">
-            <h4>Serving<br>
+                <h4>Serving<br>
                 <?=$location?>
             </h4>
             </div>
-            <h5 class="phone">
-<a href="tel:<?=$phone?>">
+            <div class="tel">
+                <h5>
+<a href="tel:<?=$phone?>" title="Call Now">
         <?=$phone?>
         </a>
         </h5>
-        
+            
+            </div>
+
         </div>
     </section>
 
